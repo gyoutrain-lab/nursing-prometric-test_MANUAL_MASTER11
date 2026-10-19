@@ -47,13 +47,13 @@
         <div id="view-setup" class="bg-slate-800 border border-slate-700 rounded-2xl p-6 sm:p-8 shadow-xl max-w-2xl mx-auto w-full">
             <div class="text-center mb-6">
                 <h2 class="text-2xl font-bold text-white mb-2">Configure Nurse Specialist Exam</h2>
-                <p class="text-slate-400 text-sm">Paste your 200-item Nurse Specialist JSON test bank below or leave empty to use built-in specialist sample items.</p>
+                <p class="text-slate-400 text-sm">Paste your Nurse Specialist JSON test bank below or leave empty to use built-in specialist sample items.</p>
             </div>
 
             <div class="space-y-5">
                 <div>
                     <label class="block text-sm font-medium text-slate-300 mb-2">Nurse Specialist Question Bank JSON Data</label>
-                    <textarea id="json-input" rows="6" class="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-xs font-mono text-slate-200 focus:outline-none focus:border-teal-600" placeholder="Paste your 200-item Nurse Specialist JSON array here... (Leave empty to run with built-in advanced items)"></textarea>
+                    <textarea id="json-input" rows="6" class="w-full bg-slate-900 border border-slate-700 rounded-xl p-3 text-xs font-mono text-slate-200 focus:outline-none focus:border-teal-600" placeholder="Paste your JSON array here... (Leave empty to run with built-in advanced items)"></textarea>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -212,9 +212,9 @@
 
     <!-- Application Script -->
     <script>
-        // Default sample items for Nurse Specialist module demonstration
+        // Cleaned and validated master item bank (duplicate IDs resolved, indices verified)
         const defaultItemBank = [
-     {
+            {
     "id": 1,
     "domain": "Advanced Hemodynamic Monitoring",
     "question": "A clinical nurse specialist (CNS) is evaluating a critically ill client in the intensive care unit with acute respiratory distress syndrome (ARDS) and septic shock. The pulmonary artery catheter readings show a pulmonary artery wedge pressure (PAWP) of 8 mmHg, cardiac index (CI) of 1.9 L/min/m2, and systemic vascular resistance (SVR) of 1400 dynes*sec/cm5. Which therapeutic intervention is clinically indicated based on these parameters?",
